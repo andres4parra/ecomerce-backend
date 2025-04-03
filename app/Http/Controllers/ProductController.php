@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Products;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -16,8 +17,10 @@ class ProductController extends Controller
     public function create(){
         return view('products.create');//retorna el formulario para crear un producto
     }
-    public function show($name){
-        return view('products.show');//retorna el detalle de un producto
+    public function show($id){
+
+        $product = Products::find($id);
+        return view('products.show',['product'=>$product]);//retorna el detalle de un producto
     }
     
 }

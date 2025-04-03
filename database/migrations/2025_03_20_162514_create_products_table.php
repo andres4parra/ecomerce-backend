@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreign('category_id')->references('id')->on('category');
             $table->timestamps();
             $table->string('image_url')->nullable();
+            
         });
     }
 
