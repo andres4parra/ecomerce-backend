@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Models\Category;
 use App\Models\Products;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Cartitems;
 use Illuminate\Database\Seeder;
 
 
@@ -23,9 +23,12 @@ class DatabaseSeeder extends Seeder
         );
         $this->call(ProductsSeeder::class);
 
-        Category::factory(100)->create();
-        User::factory(100)->create();
+        Category::factory(1000)->create();
+        User::factory(1000)->create();
         
-        Products::factory(100)->create();
+        Products::factory(1000)->create();
+
+        Cartitems::factory(1000)->create();
+
     }
 }

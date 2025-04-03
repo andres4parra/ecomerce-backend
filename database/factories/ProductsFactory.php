@@ -22,7 +22,7 @@ class ProductsFactory extends Factory
             'description' => fake()->paragraph(),
             'price' => fake()->randomFloat(2, 10000, 3000000),
             'category_id' => Category::inrandomOrder()->first()->id,
-            'image_url' => fake()->imageUrl(640, 400, 'products', true),
+            'image_url' => 'https://dlcdnwebimgs.asus.com/files/media/8B74E7EE-B66A-4420-894E-3C3B980312EE/v1/img/design/color/strix-g-2022-pink.png',
         ];
     }
 }

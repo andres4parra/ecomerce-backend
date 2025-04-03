@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Products;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     public function index(){
-       return view('products.index'); //retorna un listado de productos
+       $ListProducts = Products::paginate(); 
+       return view('products.index',[
+        'list' => $ListProducts
+       ]); 
     }
     public function create(){
         return view('products.create');//retorna el formulario para crear un producto
