@@ -4,10 +4,13 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+            <div class="card" style="border-color: #FF8C00;">
+                <div class="card-header text-center" style="background-color: #FF8C00; color: white;">
+                    <img src="https://unab.edu.co/wp-content/uploads/2022/09/cropped-favicon-naranja.png" alt="Logo" style="max-height: 50px; margin-bottom: 10px;">
+                    <h4>{{ __('Register') }}</h4>
+                </div>
 
-                <div class="card-body">
+                <div class="card-body" style="background-color: white;">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -63,7 +66,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn" style="background-color: #FF8C00; color: white;">
                                     {{ __('Register') }}
                                 </button>
                             </div>
