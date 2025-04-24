@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.footer {
+    background-color: rgb(236, 154, 0);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
